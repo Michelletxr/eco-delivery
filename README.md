@@ -1,6 +1,6 @@
 # Sistema de Gestão e Controle para Entregas de Doações
 
-Este é um sistema de gestão e controle para entregas de doações. O sistema visa permitir que entregadores (moto deliverys) possam acessar e gerenciar os locais, datas e recolhimento as doações realizadas por contribuintes.
+Este sistema é uma plataforma de gestão e controle para entregas de doações, projetada para facilitar o trabalho de entregadores (motoboys). Através deste sistema, os entregadores podem acessar e gerenciar informações sobre locais de coleta, datas e registros das doações feitas pelos contribuintes. O sistema visa otimizar a logística das entregas e facilitar o processo de doação realizado por contribuidores (doadores).
 
 ## Front - End 
 A aplicação front-end se encontra no diretório principal do projeto em EcoDeliveryApp
