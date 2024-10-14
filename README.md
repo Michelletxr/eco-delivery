@@ -1,4 +1,4 @@
-# Sistema de Gestão e Controle para Entregas de Doações :mailbox_with_mail:
+# Sistema de Gestão e Controle para Entregas de Doações :pushpin:
 
 Este sistema é uma plataforma de gestão e controle para entregas de doações, projetada para facilitar o trabalho de entregadores (motoboys). Através deste sistema, os entregadores podem acessar e gerenciar informações sobre locais de coleta, datas e registros das doações feitas pelos contribuintes. O sistema visa otimizar a logística das entregas e auxiliar o processo de doação.
 
