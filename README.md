@@ -38,7 +38,7 @@ A aplicação back-end se encontra no diretório principal do projeto em EcoDeli
 No Arquivo appsettings.js dentro do diretório principal, adicione as informações para conexão com seu banco de dados.
 - Exemplo:  "DefaultConnection": "Server=localhost;Database=eco_db;User Id=sa;Password=root;TrustServerCertificate=True;"
 
-## Banco de dados :bank:
+## Banco de Dados :bank:
 ### Ferramenta
 - SQL Server (v19.1)
 ### Migrações
