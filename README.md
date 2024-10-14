@@ -1,8 +1,8 @@
-# Sistema de Gestão e Controle para Entregas de Doações
+# Sistema de Gestão e Controle para Entregas de Doações :mailbox_with_mail:
 
 Este sistema é uma plataforma de gestão e controle para entregas de doações, projetada para facilitar o trabalho de entregadores (motoboys). Através deste sistema, os entregadores podem acessar e gerenciar informações sobre locais de coleta, datas e registros das doações feitas pelos contribuintes. O sistema visa otimizar a logística das entregas e auxiliar o processo de doação.
 
-## Front - End 
+## Front - End :computer:
 A aplicação front-end se encontra no diretório principal do projeto em EcoDeliveryApp
 ### Ferramentas
 - Node.js (v18.20.4)
@@ -18,7 +18,7 @@ $ cd EcoDeliveryApp
 $ npm install
 $ ng serve
 ```
-## Back - End
+## Back - End :wrench:
 A aplicação back-end se encontra no diretório principal do projeto em EcoDeliveryApi
   ### Ferramentas
   - C# (v9.^)
@@ -38,7 +38,7 @@ A aplicação back-end se encontra no diretório principal do projeto em EcoDeli
 No Arquivo appsettings.js dentro do diretório principal, adicione as informações para conexão com seu banco de dados.
 - Exemplo:  "DefaultConnection": "Server=localhost;Database=eco_db;User Id=sa;Password=root;TrustServerCertificate=True;"
 
-## Banco de dados
+## Banco de dados :bank:
 ### Ferramenta
 - SQL Server (v19.1)
 ### Migrações
