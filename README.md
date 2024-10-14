@@ -12,10 +12,12 @@ A aplicação front-end se encontra no diretório principal do projeto em EcoDel
 ### Interface e Componentes
 - Angular/Material
 ### Compilação e execução
-- cd EcoDeliveryApp
-- npm install
-- ng serve
-
+Siga os passos abaixo para compilar e executar a aplicação front-end:
+```bash
+$ cd EcoDeliveryApp
+$ npm install
+$ ng serve
+```
 ## Back - End
 A aplicação back-end se encontra no diretório principal do projeto em EcoDeliveryApi
   ### Ferramentas
@@ -27,19 +29,23 @@ A aplicação back-end se encontra no diretório principal do projeto em EcoDeli
   - Pacote de Nível Superior
   - IdentityModel Tokens                                  
   ### Compilação e execução
-  - cd EcoDeliveryApi
-  - dotnet restore
-  - dotnet build
-  - dotnet run
-* No Arquivo appsettings.js dentro do diretório principal, adicione as informações para conexão com seu banco de dados.
--- Exemplo:  "DefaultConnection": "Server=localhost;Database=eco_db;User Id=sa;Password=root;TrustServerCertificate=True;"
+  ```bash
+  $ cd EcoDeliveryApi
+  $ dotnet restore
+  $ dotnet build
+  $ dotnet run
+  ```
+No Arquivo appsettings.js dentro do diretório principal, adicione as informações para conexão com seu banco de dados.
+- Exemplo:  "DefaultConnection": "Server=localhost;Database=eco_db;User Id=sa;Password=root;TrustServerCertificate=True;"
 
 ## Banco de dados
 ### Ferramenta
 - SQL Server (v19.1)
 ### Migrações
-* Após criar seu banco de dados localmente com as informações de usuário e senha execute as migrações para criar as tabelas do banco, você pode aplicar as migrações ao banco de dados usando o seguinte comando:
+Após criar seu banco de dados localmente com as informações de usuário e senha execute as migrações para criar as tabelas do banco, você pode aplicar as migrações ao banco de dados usando o seguinte comando:
 - dotnet ef database update
+
+  
 
 
 
