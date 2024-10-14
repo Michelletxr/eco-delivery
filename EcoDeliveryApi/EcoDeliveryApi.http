@@ -1,0 +1,6 @@
+@EcoDeliveryApi_HostAddress = http://localhost:5143
+
+GET {{EcoDeliveryApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

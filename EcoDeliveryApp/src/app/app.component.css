@@ -1,0 +1,12 @@
+.dashboard-container {
+    display: flex;
+}
+.main-content {
+  background-color: rgb(229, 235, 235);
+}
+
+h1{
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 700px;
+}

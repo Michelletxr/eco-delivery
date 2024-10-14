@@ -1,0 +1,49 @@
+<div class="recibo-detail">
+    <mat-card class="recibo-card">
+      <mat-card-header>
+        <mat-card-title>Recibo - {{ recibo.id }}</mat-card-title>
+        <button mat-icon-button class="close-button" (click)="closeDetail()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- Seção de informações gerais -->
+        <div class="recibo-info">
+          <p><strong>Contribuinte:</strong> {{ recibo.contribuinte?.nome }}</p>
+          <p><strong>Status:</strong>
+            <span *ngIf="recibo.status == 1"> Pendente </span>
+            <span *ngIf="recibo.status == 2"> Recebido </span>
+            <span *ngIf="recibo.status == 3"> Cancelado </span>
+          </p>
+          <p><strong>Valor:</strong> {{ recibo.valor }}</p>
+        </div>
+        <mat-divider></mat-divider>
+        <!-- Seção de informações detalhadas -->
+        <div class="recibo-detalhes">
+          <p><strong>Endereço:</strong> {{ recibo.contribuinte?.endereco }}</p>
+          <p><strong>Telefone:</strong> {{ recibo.contribuinte?.telefone }}</p>
+          <p><strong>Data Prevista:</strong> {{ formatDate(recibo.data_Prevista) }}</p>
+          <p><strong>Data de Recebimento:</strong> {{ recibo.data_Recebimento ? formatDate(recibo.data_Recebimento) : 'Não recebido' }}</p>
+        </div>
+        <div class="card-comprovante-container">
+            <button mat-raised-button color="primary" [disabled]="isCancelDisabled">
+              <mat-icon>receipt_long</mat-icon>
+              Gerar Comprovante
+            </button>
+          </div>
+          <mat-divider></mat-divider>
+      </mat-card-content>
+      <!-- Seção para botões -->
+      <div class="card-button-container">
+        <button mat-raised-button color="accent" (click)="updateStatusRecibo(2)">
+          <mat-icon>check</mat-icon>
+          Receber
+        </button>
+        <button mat-raised-button color="warn" (click)="updateStatusRecibo(3)">
+          <mat-icon>close</mat-icon>
+          Cancelar
+        </button>
+      </div>
+    </mat-card>
+  </div>
+  

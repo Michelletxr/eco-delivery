@@ -1,0 +1,35 @@
+.recibo-card {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 5rem;
+    align-self: center;
+    margin-top: 50px;
+}
+  
+.recibo-info, .recibo-detalhes {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+  
+.card-comprovante-container {
+    text-align: center;
+    margin: 15px 0; 
+}
+  
+.card-button-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 30px 0 10px 100px; 
+}
+  
+mat-divider {
+    margin: 10px 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+  

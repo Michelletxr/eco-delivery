@@ -1,0 +1,24 @@
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    height: 100vh;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-start; /* Alinha os itens no início */
+}
+  
+.card {
+    background-color: #fff;
+    padding: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recibo-detail {
+    flex: 1; /* O card de detalhes também ocupa o espaço disponível */
+}
