@@ -11,7 +11,7 @@ A aplicação front-end se encontra no diretório principal do projeto em EcoDel
 - NPM (v10.7.0)
 ### Interface e Componentes
 - Angular/Material
-#### Compilação e execução
+### Compilação e execução
 - cd EcoDeliveryApp
 - npm install
 - ng serve
@@ -21,8 +21,7 @@ A aplicação back-end se encontra no diretório principal do projeto em EcoDeli
   ### Ferramentas
   - C# (v9.^)
   - .Net SDK (v9.0.100)
-  - 
-  ### Depências e Bibliotecas
+  ### Dependências e Bibliotecas
   -  Entity Framework Core (SQL Server)
   -  Authentication JwtBearer
   - Pacote de Nível Superior
