@@ -28,11 +28,6 @@ export class DashboardComponent  implements OnInit {
   recibos: Recibo[] = []
   selectedRecibo: any
   showRecibo = false
- 
-  // Função para aplicar o filtro
-  applyFilter(event: Event) {
-    this.dataSource.data = this.mov_diarios;
-  }
 
   goToReciboDetail(reciboId: number) {
     this.router.navigate(['/recibo', reciboId]);
@@ -51,8 +46,18 @@ export class DashboardComponent  implements OnInit {
     this.selectedRecibo = recibo;
   }
 
-  closeDetail() {
+  onCloseDetail() {
     this.showRecibo = false;
+  }
+
+  onFilterChange(event: { startDate: string | null }) {
+    if(event.startDate){
+      this.recibosService.getMovimentosDiariosByDate(1, event.startDate).subscribe((data: MovimentoDiario[]) => {
+        this.dataSource.data = data;
+     }, (error) => {
+        console.error('Erro ao carregar os movimentos diarios:', error);
+     });
+    }
   }
 
 }

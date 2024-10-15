@@ -15,11 +15,21 @@ import { CommonModule } from '@angular/common';
 })
 export class DateFilterComponent {
   startDate: Date | null = null;
-  endDate: Date | null = null;
 
-  @Output() filterChange = new EventEmitter<{ startDate: Date | null, endDate: Date | null }>();
+  @Output() filterChange = new EventEmitter<{ startDate: string | null }>();
 
   applyFilter() {
-    this.filterChange.emit({ startDate: this.startDate, endDate: this.endDate });
+    if(this.startDate){
+      var dateString = this.convertDate(this.startDate.toString())
+      this.filterChange.emit({ startDate: dateString });
+    }
+  }
+
+  convertDate(dateString: string): string {
+    const date = new Date(dateString);
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+    const year = date.getFullYear();
+    return `${year}-${month}-${day}`;
   }
 }

@@ -1,24 +1,25 @@
 
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #ecf0f1;
-    height: 100vh;
-}
-  
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: flex-start; /* Alinha os itens no início */
+    padding: 100px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
 }
   
-.card {
-    background-color: #fff;
+.card-container {
+    background-color: #ffece7;
     padding: 100px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(50, 50, 50, 0.3);
+    display: flex;
+    gap: 30px;
 }
 
 .recibo-detail {
     flex: 1; /* O card de detalhes também ocupa o espaço disponível */
+}
+
+table{
+    width: 100rem;
+    height: 30rem;
 }

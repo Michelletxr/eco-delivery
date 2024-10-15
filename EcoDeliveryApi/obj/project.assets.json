@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
+    "net8.0": {
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -145,18 +145,18 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.OpenApi/9.0.0-rc.1.24452.1": {
+      "Microsoft.AspNetCore.OpenApi/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.OpenApi": "1.6.17"
+          "Microsoft.OpenApi": "1.4.3"
         },
         "compile": {
-          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
           }
         },
@@ -844,12 +844,12 @@
       "Microsoft.IdentityModel.Abstractions/8.1.2": {
         "type": "package",
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -876,12 +876,12 @@
           "Microsoft.IdentityModel.Abstractions": "8.1.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
             "related": ".xml"
           }
         }
@@ -927,17 +927,17 @@
           "Microsoft.IdentityModel.Logging": "8.1.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
+          "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.OpenApi/1.6.17": {
+      "Microsoft.OpenApi/1.6.14": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -1815,18 +1815,18 @@
         "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/9.0.0-rc.1.24452.1": {
-      "sha512": "pMG6XHhr+9ESl6nUlXaZ/ibqqhy+EgwJ+u4jkrX/BliZ/q0tDfanCVKiozNC+ZyNbptGkeZiYsD9MdqVspmYLQ==",
+    "Microsoft.AspNetCore.OpenApi/8.0.0": {
+      "sha512": "T4mwMvPSOYAp+KeQ4xO8H2rxpiOMJ9W/7yBBkUTMp96AHtGlPN4s7hbax2tM61LxTY775JKL4fiv5grn41EHXw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/9.0.0-rc.1.24452.1",
+      "path": "microsoft.aspnetcore.openapi/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
-        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.9.0.0-rc.1.24452.1.nupkg.sha512",
+        "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -3333,10 +3333,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.OpenApi/1.6.17": {
-      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+    "Microsoft.OpenApi/1.6.14": {
+      "sha512": "tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
       "type": "package",
-      "path": "microsoft.openapi/1.6.17",
+      "path": "microsoft.openapi/1.6.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3344,7 +3344,7 @@
         "lib/netstandard2.0/Microsoft.OpenApi.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.1.6.14.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
     },
@@ -4517,11 +4517,11 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net9.0": [
+    "net8.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.10",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.10",
-      "Microsoft.AspNetCore.OpenApi >= 9.0.0-rc.1.24452.1",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.IdentityModel.Tokens >= 8.1.2",
@@ -4550,7 +4550,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -4558,8 +4558,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -4576,8 +4576,8 @@
       "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -4593,7 +4593,7 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[9.0.0-rc.1.24452.1, )"
+            "version": "[8.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -4645,7 +4645,7 @@
       "message": "O pacote 'Azure.Identity' 1.10.3 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -4655,7 +4655,7 @@
       "message": "O pacote 'Azure.Identity' 1.10.3 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -4665,7 +4665,7 @@
       "message": "O pacote 'Microsoft.Identity.Client' 4.56.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -4675,7 +4675,7 @@
       "message": "O pacote 'Microsoft.Identity.Client' 4.56.0 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-x674-v45j-fwxw",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -4685,7 +4685,7 @@
       "message": "O pacote 'System.Formats.Asn1' 5.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-447r-wph3-92pm",
       "libraryId": "System.Formats.Asn1",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     }
   ]

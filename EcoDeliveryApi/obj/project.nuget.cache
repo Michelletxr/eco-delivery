@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ipVvCEYNpCE=",
+  "dgSpecHash": "QzjJlGObTEQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\miche\\Desktop\\desafio\\eco_consultoria\\EcoDeliveryApi\\EcoDeliveryApi.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.10\\microsoft.aspnetcore.jsonpatch.8.0.10.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.10\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.10.nupkg.sha512",
-    "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0-rc.1.24452.1\\microsoft.aspnetcore.openapi.9.0.0-rc.1.24452.1.nupkg.sha512",
+    "C:\\Users\\miche\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.1\\microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -48,7 +48,7 @@
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.1.2\\microsoft.identitymodel.tokens.8.1.2.nupkg.sha512",
-    "C:\\Users\\miche\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\miche\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
@@ -99,7 +99,7 @@
       "message": "O pacote 'Azure.Identity' 1.10.3 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -109,7 +109,7 @@
       "message": "O pacote 'Azure.Identity' 1.10.3 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -119,7 +119,7 @@
       "message": "O pacote 'Microsoft.Identity.Client' 4.56.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -129,7 +129,7 @@
       "message": "O pacote 'Microsoft.Identity.Client' 4.56.0 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-x674-v45j-fwxw",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -139,7 +139,7 @@
       "message": "O pacote 'System.Formats.Asn1' 5.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-447r-wph3-92pm",
       "libraryId": "System.Formats.Asn1",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     }
   ]

@@ -2,9 +2,10 @@
     <!-- Área principal -->
     <main>
       <div class="grid-container">
-        <div class="card">
+        <div class="card-container">
+        <section>
             <h2>Lista de Recibos</h2>
-            <app-date-filter></app-date-filter>
+            <app-date-filter (filterChange)="onFilterChange($event)"></app-date-filter>
                 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                     <!-- Número do Recibo -->
                     <ng-container matColumnDef="numeroRecibo">
@@ -45,10 +46,13 @@
                         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                 </table>
+            </section>
+            <section>
                 <!-- Seção de Detalhes do Recibo -->
                 <div *ngIf="showRecibo" class="recibo-detail">
-                    <app-recibo-detail [recibo]="selectedRecibo" (close)="closeDetail()"></app-recibo-detail>
+                    <app-recibo-detail [recibo]="selectedRecibo" (close)="onCloseDetail()"></app-recibo-detail>
                 </div>
+            </section>
         </div>
       </div>
     </main>

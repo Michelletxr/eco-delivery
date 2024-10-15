@@ -58,8 +58,8 @@ export class RecibosService {
     return this.http.get(`${this.apiUrl}/Mensageiro/movimentoDiario/${id}`);
   }
 
-  getMovimentosDiariosByDate(id: Number){
-    return this.http.get(`${this.apiUrl}/Mensageiro/movimentoDiario/${id}?dataPrevista=2024-10-12`);
+  getMovimentosDiariosByDate(id: Number, data_Prevista: string):Observable<any>{
+    return this.http.get(`${this.apiUrl}/Mensageiro/movimentoDiario/${id}?dataPrevista=${data_Prevista}`);
   }
 
   getRecibo(id: Number): Observable<any> {

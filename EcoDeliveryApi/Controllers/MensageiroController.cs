@@ -59,9 +59,9 @@ namespace EcoDeliveryApi.Controllers
             {
                 foreach (var mov in queryList)
                 {
-                    DateTime dataRecebimento = mov.ContribuicaoRecibo.Data_Recebimento;
-                    string dataRecebimentoFormatada = dataRecebimento.ToString("dd/MM/yyyy");
-                    if(dataRecebimentoFormatada.Equals(dataPrevista.Value.ToString("dd/MM/yyyy"))){
+                    DateTime dataPrev = mov.ContribuicaoRecibo.Data_Prevista;
+                    string dataPrevFormatada = dataPrev.ToString("dd/MM/yyyy");
+                    if(dataPrevFormatada.Equals(dataPrevista.Value.ToString("dd/MM/yyyy"))){
                             movList.Add(mov);
                     }
                     
