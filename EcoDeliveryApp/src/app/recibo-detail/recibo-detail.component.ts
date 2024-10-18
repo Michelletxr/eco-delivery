@@ -4,9 +4,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { RecibosService } from '../recibos.service';
+import { ContribuicaoRecibo, RecibosService } from '../services/recibos.service';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-recibo-detail',
@@ -22,10 +22,10 @@ export class ReciboDetailComponent {
   constructor(
     private datePipe: DatePipe,
     private router: ActivatedRoute,
-    private service: RecibosService
+    private service: RecibosService,
+    private http: HttpClient
   ) {}
 
-  
   isCancelDisabled = true;
   @Input() recibo: any; 
   @Output() close = new EventEmitter<void>()
@@ -35,7 +35,6 @@ export class ReciboDetailComponent {
     if(this.recibo){
       this.reciboId = this.recibo.id;
       this.updateButtonStates();
-      this.service.updateReciboStatus(this.recibo.id, 2)
     }else{
       this.router.paramMap.subscribe(params => {
         this.reciboId = +params.get('id')!; // Recupera o ID como número
@@ -53,6 +52,7 @@ export class ReciboDetailComponent {
     this.service.getRecibo(this.reciboId).subscribe(
       (data) => {
         this.recibo = data;
+        this.recibo.status = data.status
         this.updateButtonStates();
       },
       (error) => {
@@ -62,16 +62,26 @@ export class ReciboDetailComponent {
   }
 
   updateStatusRecibo(status: number){
-    this.service.updateReciboStatus(this.recibo.id, status)
-    this.recibo.status = status
-    this.updateButtonStates();
+    const url = 'http://localhost:5062/api/Contribuicao';
+    const body = { id: this.recibo.id, status: status };
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    this.http.put(url, body, { headers }).subscribe((data:any)=>{
+       this.recibo.status = data.status
+       this.updateButtonStates();
+     }, (error) => {
+      console.error('Erro ao atualizar status de recibo:', error);
+   });
   }
  
   updateButtonStates() {
-    this.isCancelDisabled = this.recibo.status != 2;
+    //resolver bug do botão
+    if(this.recibo.status == 3){
+      this.isCancelDisabled = true;
+    }else{
+      this.isCancelDisabled = false;
+    }
   }
 
-   // Função para fechar o componente
   closeDetail() {
     this.close.emit(); 
   }

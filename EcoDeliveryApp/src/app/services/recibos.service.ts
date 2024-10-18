@@ -1,5 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { S, U } from '@angular/cdk/keycodes';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { catchError, throwError } from 'rxjs';
 import { Observable } from 'rxjs/internal/Observable';
 
 export interface Contribuinte {
@@ -64,11 +66,6 @@ export class RecibosService {
 
   getRecibo(id: Number): Observable<any> {
     return this.http.get(`${this.apiUrl}/Contribuicao/${id}`);
-  }
-
-  updateReciboStatus(id: number, status: number): Observable<any> {
-    const updatePayload = { status }; 
-    return this.http.put(`${this.apiUrl}/Contribuicao/${id}`, updatePayload);
   }
 
 }

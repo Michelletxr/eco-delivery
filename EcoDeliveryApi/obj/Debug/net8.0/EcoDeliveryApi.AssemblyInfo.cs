@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("09f286ba-f499-4bc5-9076-6e9d41484117")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoDeliveryApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+923eefcef5b78d9abca88a23fe99ee8c7a75a67e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+989c34ce3f584903d8b40031119bc7e881c48ec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoDeliveryApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoDeliveryApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

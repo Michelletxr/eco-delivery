@@ -15,6 +15,7 @@
     gap: 30px;
 }
 
+
 .recibo-detail {
     flex: 1; /* O card de detalhes também ocupa o espaço disponível */
 }
@@ -22,4 +23,11 @@
 table{
     width: 100rem;
     height: 30rem;
+}
+
+h2{
+    font-size: 2rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o título em negrito */
+    color: #f0ebeb; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Aplica sombra ao texto */
 }

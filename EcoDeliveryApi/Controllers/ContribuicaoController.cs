@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace EcoDeliveryApi.Controllers
 {
     [Route("api/[controller]")]
@@ -35,21 +36,28 @@ namespace EcoDeliveryApi.Controllers
             return contribuicao;
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<Contribuicao>> Update(int id, [FromBody] int status)
+        [HttpPut]
+        public async Task<ActionResult<Contribuicao>> UpdateStatus(ContribuicaoPut contribuicaoPut)
         {
-            var contribuicao = await _context.Contribuicao.FindAsync(id);
+            var contribuicao = await _context.Contribuicao.FindAsync(contribuicaoPut.Id);
 
             if (contribuicao == null)
             {
                 return NotFound();
             }
 
-            contribuicao.Status = Contribuicao.GetStatusEnum(status);
+            contribuicao.Status = Contribuicao.GetStatusEnum(contribuicaoPut.Status);
             _context.Contribuicao.Update(contribuicao);
             _context.SaveChanges();
 
             return contribuicao;
         }
     }
+
+    public class ContribuicaoPut
+    {
+        public int Id { get; set; }
+        public int Status { get; set; }
+    }
+
 }

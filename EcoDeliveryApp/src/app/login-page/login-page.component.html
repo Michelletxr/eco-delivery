@@ -1,0 +1,36 @@
+<section class="login-section">
+  <mat-card class="mat-elevation-z4">
+    <div class="toolbar-content">
+      <img src="logo_1.png" alt="Eco Delivery Logo" class="logo">
+    </div>
+    <mat-card-content class="card-content">
+      <!-- Formulário que utiliza o FormGroup -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <!-- Campo de email -->
+        <mat-form-field class="full-width">
+          <mat-label>Nome de Usuário</mat-label>
+          <input matInput formControlName="nome" type="text" autocomplete="nome" required>
+          <mat-error *ngIf="loginForm.get('nome')?.invalid && loginForm.get('nome')?.touched">
+            Nome de usuário é obrigatório
+          </mat-error>
+        </mat-form-field>
+        
+        <!-- Campo de senha -->
+        <mat-form-field class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput formControlName="senha" type="senha" autocomplete="current-senha" required>
+          <mat-error *ngIf="loginForm.get('senha')?.invalid && loginForm.get('senha')?.touched">
+            Senha é obrigatória
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Botão de login -->
+        <div class="button-container">
+          <button mat-raised-button color="accent" type="submit" [disabled]="loginForm.invalid">
+            Login
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</section>
