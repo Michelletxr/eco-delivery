@@ -1,10 +1,10 @@
 import { CommonModule, DatePipe } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { ContribuicaoRecibo, RecibosService } from '../services/recibos.service';
+import { RecibosService } from '../services/recibos.service';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 
@@ -30,6 +30,12 @@ export class ReciboDetailComponent {
   @Input() recibo: any; 
   @Output() close = new EventEmitter<void>()
   reciboId: any;
+
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.updateButtonStates();
+
+  }
 
   ngOnInit() {
     if(this.recibo){
@@ -74,8 +80,8 @@ export class ReciboDetailComponent {
   }
  
   updateButtonStates() {
-    //resolver bug do botão
-    if(this.recibo.status == 3){
+    const status = this.recibo.status
+    if(status == 1 || status == 3){
       this.isCancelDisabled = true;
     }else{
       this.isCancelDisabled = false;

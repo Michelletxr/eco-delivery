@@ -61,7 +61,7 @@ export class DashboardComponent  implements OnInit {
 
   onFilterChange(event: { startDate: string | null }) {
     if(event.startDate){
-      this.recibosService.getMovimentosDiariosByDate(1, event.startDate).subscribe((data: MovimentoDiario[]) => {
+      this.recibosService.getMovimentosDiariosByDate(Number(this.id), event.startDate).subscribe((data: MovimentoDiario[]) => {
         this.dataSource.data = data;
      }, (error) => {
         console.error('Erro ao carregar os movimentos diarios:', error);
